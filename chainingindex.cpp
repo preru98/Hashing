@@ -1,3 +1,10 @@
+/*
+
+Chaining : Open Addressing method for collision resolution.
+It yields the relative position/index of the key in the input array.
+
+*/
+
 #include<iostream>
 using namespace std;
 
@@ -8,19 +15,12 @@ struct Node{
     Node* next;
 }*hashtable[size_hashtable];
 
-
-/*
-Chaining : Open Addressing method for collision resolution.
-
-*/
 void insert_in_hashtable(int[],int);
 int hash_function(int);
 Node* create_node(int,int);
 void insert(int, int,Node*);
 void view();
 int search(int);  
-
-
 
 int main(){
     int input_array[]={4,10,0,14,16,6,13,9}; //Inclusive Range 1-20 
